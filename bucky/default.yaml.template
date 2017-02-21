@@ -1,5 +1,5 @@
-server:  
-    port: '{{BUCKY_PORT}}'
+server:
+    port: {{BUCKY_PORT}}
     appRoot: "/bucky"  
     allowOrigin: '*'
 
@@ -13,7 +13,7 @@ opentsdb:
 
 influxdb:
   host: '{{INFLUXDB_HOST}}'
-  port: '{{INFLUXDB_PORT}}'
+  port: {{INFLUXDB_PORT}}
   database: '{{INFLUXDB_DATABASE}}'
   username: '{{INFLUXDB_USERNAME}}'
   password: '{{INFLUXDB_PASSWORD}}'
@@ -30,7 +30,7 @@ modules:
     - ./modules/collectors
 
   collectors:
-#    - ./modules/collectionLogger
+    #- ./modules/collectionLogger
     - ./modules/influxdb
     #- ./modules/statsd
     #- ./modules/openTSDB

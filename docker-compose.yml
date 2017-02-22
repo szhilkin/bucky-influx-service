@@ -19,5 +19,5 @@ services:
       - influx:influx
 
     influx:
-     image: influxdb:1.1
+     image: tutum/influxdb:0.9
 
